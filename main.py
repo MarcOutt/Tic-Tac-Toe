@@ -1,5 +1,5 @@
 # initialization
-board = [[' ']*3 for _ in range(3)]
+board = [[' '] * 3 for _ in range(3)]
 
 player_1 = False
 player_2 = False
@@ -21,24 +21,30 @@ def get_choice(player):
         print("C'est au tour du joueur 1 de jouer")
     else:
         print("C'est au tour du joueur 2 de jouer")
-    line = int(input("Veuillez choisir votre ligne "))
-    column = int(input("Veuillez choisir votre colonne "))
-    return line, column
+
+    while True:
+        try:
+            line = int(input("Veuillez choisir votre ligne "))
+            column = int(input("Veuillez choisir votre colonne "))
+            if 0 < line < 4 and 0 < column < 4:
+                return line, column
+            else:
+                print("Veuillez choisir un numéro entre 1 et 3")
+        except ValueError:
+            print("Veuillez entrer un nombre entier valide")
 
 
 # Check the user's choice
 def check_choice(line, column):
-    if board[line-1][column-1] == "X":
+    if board[line - 1][column - 1] == "X":
         print("Le choix n'est pas disponible")
         return False
-    elif board[line-1][column-1] == "O":
+    elif board[line - 1][column - 1] == "O":
         print("Le choix n'est pas disponible")
-        return False
-    elif 1 > line < 4 or 1 > column < 4 :
-        print("Veuillez choisir un numéro entre 1 et 3")
         return False
     else:
         return True
+
 
 def check_win(player):
     # Check rows
@@ -77,9 +83,18 @@ def play(player):
     return check_win(player)
 
 
+print("""           __ _  __ _ _ __ ___   ___  ___ 
+          / _` |/ _` | '_ ` _ \ / _ \/ __|
+         | (_| | (_| | | | | | |  __/\__ |
+          \__, |\__,_|_| |_| |_|\___||___/
+           __/ |                          
+          |___/            \n""")
+print("WELCOME TO TIC TAC TOE \n")
+
+print(display_board())
+
 while player_1 == False and player_2 == False:
     player_1 = play("X")
     if player_1:
         break
     player_2 = play("O")
-
