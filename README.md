@@ -35,7 +35,7 @@ Veuillez choisir votre ligne : 2
 Veuillez choisir votre colonne : 2
 
  X | _ | _  
- _ | O | _  
+ _  | O | _  
  _ | _ | _  
 
 C'est au tour du joueur 2 de jouer
@@ -43,8 +43,8 @@ Veuillez choisir votre ligne : 1
 Veuillez choisir votre colonne : 1
 
  X | _ | _  
- _ | O | _  
- O | _ | _  
+ _  | O | _  
+ O  | _ | _  
 
 ...
 
