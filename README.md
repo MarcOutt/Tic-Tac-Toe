@@ -20,7 +20,7 @@ Le plateau de jeu est une grille 3x3 où les joueurs effectuent leurs mouvements
 -----------
  4 | 5 | 6
 -----------
- 7 | 8 | 9
+ 4 | 5 | 6
 
 
 ## Comment Exécuter
@@ -40,7 +40,7 @@ Veuillez choisir votre colonne : 2
 -----------
  _ | O | _
 -----------
- _ |   | _
+ _ | _ | _
 
 C'est au tour du joueur 2 de jouer
 Veuillez choisir votre ligne : 1
