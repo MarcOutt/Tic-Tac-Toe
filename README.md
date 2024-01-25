@@ -16,9 +16,9 @@ Bienvenue dans le jeu du Morpion ! Il s'agit d'une implémentation console du cl
 
 Le plateau de jeu est une grille 3x3 où les joueurs effectuent leurs mouvements. Des coordonnées sont utilisées pour spécifier une cellule. L'état initial du plateau ressemble à ceci :
 
- 1 | 2 | 3
- 4 | 5 | 6
- 4 | 5 | 6
+ 1 | 2 | 3  
+ 4 | 5 | 6  
+ 4 | 5 | 6  
 
 
 ## Comment Exécuter
@@ -34,17 +34,17 @@ C'est au tour du joueur 1 de jouer
 Veuillez choisir votre ligne : 2
 Veuillez choisir votre colonne : 2
 
- X | _ | _ 
- _ | O | _
- _ | _ | _
+ X | _ | _  
+ _ | O | _  
+ _ | _ | _  
 
 C'est au tour du joueur 2 de jouer
 Veuillez choisir votre ligne : 1
 Veuillez choisir votre colonne : 1
 
- X | _ | _
- _ | O | _ 
- O | _ | _ 
+ X | _ | _  
+ _ | O | _  
+ O | _ | _  
 
 ...
 
