@@ -36,21 +36,21 @@ C'est au tour du joueur 1 de jouer
 Veuillez choisir votre ligne : 2
 Veuillez choisir votre colonne : 2
 
- X |   |  
+ X | _ | _ 
 -----------
-   | O |  
+ _ | O | _
 -----------
-   |   |  
+ _ |   | _
 
 C'est au tour du joueur 2 de jouer
 Veuillez choisir votre ligne : 1
 Veuillez choisir votre colonne : 1
 
- X |   |  
+ X | _ | _
 -----------
-   | O |  
+ _ | O | _ 
 -----------
- O |   |  
+ O | _ | _ 
 
 ...
 
