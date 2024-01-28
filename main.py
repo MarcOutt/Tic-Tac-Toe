@@ -1,5 +1,7 @@
 # initialization
-board = [[' '] * 3 for _ in range(3)]
+EMPTY_CELL = ' '
+
+board = [[EMPTY_CELL] * 3 for _ in range(3)]
 
 player_1 = False
 player_2 = False
@@ -36,14 +38,7 @@ def get_choice(player):
 
 # Check the user's choice
 def check_choice(line, column):
-    if board[line - 1][column - 1] == "X":
-        print("Le choix n'est pas disponible")
-        return False
-    elif board[line - 1][column - 1] == "O":
-        print("Le choix n'est pas disponible")
-        return False
-    else:
-        return True
+    return board[line -1][column -1] == EMPTY_CELL
 
 
 def check_win(player):
